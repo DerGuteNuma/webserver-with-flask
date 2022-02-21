@@ -7,5 +7,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html", data="data")
 
+@app.route("numa")
+def numa():
+    return render_template("numa.html", data="data")
+
 if __name__ == "__main__":
     app.run()
